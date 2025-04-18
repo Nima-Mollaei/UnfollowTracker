@@ -1,71 +1,112 @@
 
-# GitHub Follow Status App
 
-This Python application allows you to check who you are following on GitHub, who follows you back, and who you are following but they don't follow you back. It uses GitHub's API to fetch followers and following data and displays the results in a simple graphical user interface (GUI) built with Tkinter.
+# GitHub Unfollow Tracker
 
-## Features:
+This Python application helps you see who you are following on GitHub, who follows you back, and who you are following but they don't follow you back. It uses GitHub's API to fetch followers and following data and displays the results in a simple graphical user interface (GUI) built with Tkinter.
+
+> ⏳ **Note:** It may take about **3 minutes** to start the program after launching, depending on the number of users you follow and your followers. Please be patient!
+
+---
+
+## Features
+
 - See how many people are following you.
 - See how many people you are following.
-- List users you are following but they are not following you back.
+- View the list of users you are following but they are not following you back.
+- Select users and unfollow them directly from the GUI.
+- Theme switch between light and dark mode.
 
-## Prerequisites:
-Before running this application, make sure you have the following:
-- Python 3.x installed on your machine.
-- A GitHub personal access token (PAT) to authenticate API requests.
-- Tkinter installed (it usually comes with Python, but if not, you can install it separately).
+---
 
-## Setup and Installation:
+## Prerequisites
 
-### 1. Clone the repository:
-First, clone this repository to your local machine.
+Before running the application, ensure you have the following installed:
 
+- **Python 3.x**
+- **Tkinter** (it should already be included with Python, but if not, you can install it separately)
+- **requests** Python library
 
+---
 
-### 2. Install dependencies:
-Make sure to install the required Python libraries. You can use `pip` to install the necessary packages.
+## Setup and Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/unfollow-tracker.git
+cd unfollow-tracker
+```
+
+### 2. Install Dependencies
+
+Use `pip` to install the required Python libraries:
 
 ```bash
 pip install requests
 ```
 
-**Note:** Tkinter should already be installed with Python. If it's not, you can install it as well (for example, on Ubuntu, you can run `sudo apt-get install python3-tk`).
+> If you're on Ubuntu or Debian and Tkinter isn't installed, you can install it with:
 
-### 3. Get your GitHub Personal Access Token:
-You will need a GitHub personal access token to authenticate with the GitHub API. To generate one:
+```bash
+sudo apt-get install python3-tk
+```
+
+### 3. Get Your GitHub Personal Access Token
+
 1. Go to [GitHub Settings → Developer settings → Personal access tokens](https://github.com/settings/tokens).
-2. Click **Generate new token**, give it a descriptive name, and select the necessary permissions (the default scope should work).
-3. Copy the generated token and keep it in a safe place.
+2. Click **Generate new token**.
+3. Give it a descriptive name and select the necessary permissions (the default scope should work).
+4. Copy the generated token and store it in a safe place.
 
-### 4. Configure the app:
-- Open the `UnfollowTracker.py` file in a text editor.
-- Replace the `GITHUB_TOKEN` variable with your GitHub personal access token.
-- Replace the `USERNAME` variable with your GitHub username.
+### 4. Configure the Application
+
+Open the `UnfollowTracker.py` file and update the following lines with your GitHub token and username:
 
 ```python
 GITHUB_TOKEN = "your-github-token-here"
 USERNAME = "your-username-here"
 ```
 
-### 5. Run the app:
-To start the application, simply run the Python script:
+### 5. Run the Application
 
+To start the application, simply run the script:
 
-This will open a GUI window displaying the number of followers, following, and the list of users who you follow but they don't follow you back.
+```bash
+python UnfollowTracker.py
+```
 
-## How it works:
-- The app uses GitHub's API to fetch the list of followers and people you are following.
-- It compares the lists and shows which users you are following but who are not following you back.
-- The results are displayed in a Tkinter window for easy viewing.
+This will open a GUI window showing the number of followers, following, and the list of users you follow but who don't follow you back.
 
-## Example Output:
-- **Followers:** 200
-- **Following:** 500
-- **Not following back:** 300
-- **List of users not following back:**
-    - user1
-    - user2
-    - user3
+---
 
-## Contributing:
-Feel free to contribute to this project by forking the repository and submitting a pull request. If you have any suggestions or encounter any issues, please open an issue.
+## How it Works
+
+- The app uses GitHub's API to fetch the list of followers and following.
+- It compares the two lists and displays users you are following but who don't follow you back.
+- You can select and unfollow multiple users directly from the GUI.
+- All unfollow operations are performed via GitHub's API.
+
+---
+
+## Example Output
+
+```
+👥 Followers: 200
+➡️ Following: 500
+❌ Not following back: 300
+```
+
+A list of users will appear, each with a checkbox to select and unfollow.
+
+---
+
+## Dark Mode Support
+
+You can switch between light and dark modes by clicking the 🌙 **"Change Theme"** button. The list panel is slightly lighter than the background to improve visibility.
+
+---
+
+## Contributing
+
+Feel free to contribute to this project! Fork the repository and submit a pull request. If you find any issues or have suggestions, please open an issue.
 
