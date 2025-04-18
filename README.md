@@ -110,6 +110,3 @@ You can switch between light and dark modes by clicking the 🌙 **"Change Theme
 
 Feel free to contribute to this project! Fork the repository and submit a pull request. If you find any issues or have suggestions, please open an issue.
 
-
-
-این نسخه به صورت **Markdown** هست و به راحتی می‌تونی کپی کنی و به **GitHub** اضافه کنی!
