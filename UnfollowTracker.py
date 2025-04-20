@@ -260,5 +260,6 @@ submit_btn.pack(pady=(5, 10))
 fetch_data()  # Fetch initial data
 apply_theme()  # Apply the selected theme
 
+
 # Start the GUI main loop
 window.mainloop()
