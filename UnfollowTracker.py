@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
-import threading
 import requests
+import threading
+
 
 # ------------------------------------------------------
 # GitHub credentials (Replace with your own credentials)
@@ -259,7 +260,6 @@ submit_btn.pack(pady=(5, 10))
 # ------------------------------------------------------
 fetch_data()  # Fetch initial data
 apply_theme()  # Apply the selected theme
-
 
 # Start the GUI main loop
 window.mainloop()
