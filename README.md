@@ -4,7 +4,7 @@
 
 This Python application helps you see who you are following on GitHub, who follows you back, and who you are following but they don't follow you back. It uses GitHub's API to fetch followers and following data and displays the results in a simple graphical user interface (GUI) built with Tkinter.
 
-> ⏳ **Note:** It may take about **3 minutes** to start the program after launching, depending on the number of users you follow and your followers. Please be patient!
+> ⏳ **Note:** It may take about **3 minutes** to start the program after launching, depending on the number of users you follow and your followers. PLEASE BE PATIENT!
 
 ---
 
