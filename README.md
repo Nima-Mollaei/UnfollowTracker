@@ -28,7 +28,7 @@ Before running the application, ensure you have the following installed:
 
 ---
 
-## Setup and Installation
+## Setup And Installation
 
 ### 1. Clone the Repository
 
