@@ -106,7 +106,7 @@ You can switch between light and dark modes by clicking the 🌙 **"Change Theme
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Feel free to contribute to this project! Fork the repository and submit a pull request. If you find any issues or have suggestions, please open an issue.
 
