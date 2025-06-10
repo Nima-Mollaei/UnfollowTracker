@@ -10,7 +10,7 @@ This Python application helps you see who you are following on GitHub, who follo
 
 ## Features
 
-- See how many people are following you
+- See how many people are following you.
 - See how many people you are following.
 - View the list of users you are following but they are not following you back.
 - Select users and unfollow them directly from the GUI.
